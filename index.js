@@ -1,6 +1,6 @@
 const jsonServer = require("json-server"); 
 const server = jsonServer.create();
-const router = jsonServer.router("v2_adjudicaciones_v2.json"); // Verifica que el archivo esté en la ruta correcta
+const router = jsonServer.router("test.json"); // Verifica que el archivo esté en la ruta correcta
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 361;
 
