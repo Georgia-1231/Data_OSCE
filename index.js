@@ -1,6 +1,6 @@
 const jsonServer = require("json-server"); 
 const server = jsonServer.create();
-const router = jsonServer.router("adjudicaciones_v2.json");
+const router = jsonServer.router("v_adjudicaciones_v2.json");
 const middlewares = jsonServer.defaults(); 
 const port = process.env.PORT || 361; 
 
