@@ -8,7 +8,7 @@ server.use(middlewares);
 
 // Manejar datos grandes en streaming
 server.get('/data', (req, res) => {
-    const readStream = fs.createReadStream('v_adjudicaciones_v2.json');
+    const readStream = fs.createReadStream('test.json');
     readStream.pipe(res);
 });
 
