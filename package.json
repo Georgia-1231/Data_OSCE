@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Roeg-1231/API_datos_OSCE.git"
+    "url": "git+https://github.com/Georgia-1231/Data_OSCE.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Roeg-1231/API_datos_OSCE/issues"
+    "url": "https://github.com/Georgia-1231/Data_OSCE/issues"
   },
-  "homepage": "https://github.com/Roeg-1231/API_datos_OSCE#readme",
+  "homepage": "https://github.com/Georgia-1231/Data_OSCE#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2",
