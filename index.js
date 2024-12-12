@@ -1,16 +1,11 @@
-const fs = require('fs');
-const jsonServer = require('json-server');
+const jsonServer = require("json-server"); 
 const server = jsonServer.create();
+const router = jsonServer.router("v_adjudicaciones_v2.json"); // Verifica que el archivo esté en la ruta correcta
 const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 361;
+const port = process.env.PORT || 10000;
 
 server.use(middlewares);
-
-// Manejar datos grandes en streaming
-server.get('/data', (req, res) => {
-    const readStream = fs.createReadStream('test.json');
-    readStream.pipe(res);
-});
+server.use(router);
 
 server.listen(port, () => {
     console.log(`JSON Server is running on port ${port}`);
